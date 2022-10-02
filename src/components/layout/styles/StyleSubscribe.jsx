@@ -5,19 +5,22 @@ export const ContainerSubscribe = styled.div`
     height: auto;
     background-color: #A2B4B8;
     form {
-        max-width: 600px;
+        max-width: 800px;
         padding: 5rem;
         text-align: center;
         margin: 0 auto;
+        @media (max-width: 800px) {
+        padding: .5rem;
+        }
     }
     input[type=text] {
-        width: 55%;
+        max-width: 250px;
         padding: 1rem;
         border: none;
         border-radius: 1.5rem 0 0 1.5rem;
     }
     button {
-        width: 35%;
+        max-width: 75px;
         padding: 1rem;
         border: none;
         border-radius: 0 1.5rem 1.5rem 0;
